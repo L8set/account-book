@@ -1,7 +1,7 @@
 export function splitDateTime(date: Date) {
   const yyyy = () => date.getFullYear().toString()
   const M = () => (date.getMonth() + 1).toString()
-  const d = () => date.getDate.toString()
+  const d = () => date.getDate().toString()
   return {
     get yyyy(): string {
       return yyyy()
