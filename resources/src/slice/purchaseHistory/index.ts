@@ -1,6 +1,6 @@
 import { fetchPurchaseHistories, postPurchaseHistory } from './api'
 import { createAsyncThunk } from '@reduxjs/toolkit'
-import { createDataBaseSlice } from '@/util/state/asyncData'
+import { createDataBaseSlice } from '@/slice'
 
 export const updatePurchaseHistories = createAsyncThunk(
   'purchaseHistory/fetch',
@@ -12,7 +12,7 @@ export const registerPurchaseHistory = createAsyncThunk(
   postPurchaseHistory
 )
 
-export const purchaseSlice = createDataBaseSlice(
+export const purchaseHistorySlice = createDataBaseSlice(
   'purchaseHistory',
   updatePurchaseHistories,
   registerPurchaseHistory

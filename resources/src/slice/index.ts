@@ -1,4 +1,4 @@
-import { IDataBaseState } from '@/type/api'
+import { IDataRecord, IDataState, PickRequestParams } from '@/type/api'
 import {
   ActionReducerMapBuilder,
   AsyncThunk,
@@ -7,29 +7,29 @@ import {
 } from '@reduxjs/toolkit'
 
 function createDataBaseInitialState<
-  RecordData extends object
->(): IDataBaseState<RecordData> {
+  RecordData extends IDataRecord
+>(): IDataState<RecordData> {
   return {
     records: [],
     status: 'initial',
   }
 }
 
-function setStatusAsUpdating<State extends IDataBaseState>(
+function setStatusAsUpdating<State extends IDataState>(
   state: Draft<State>
 ): void {
   state.status = 'updating'
 }
 
-function setStatusAsUpdated<State extends IDataBaseState>(
+function setStatusAsUpdated<State extends IDataState>(
   state: Draft<State>
 ): void {
   state.status = 'updated'
 }
 
 function addUpdateCaseToBuilder<
-  RecordData extends object,
-  State extends IDataBaseState = IDataBaseState<RecordData>
+  RecordData extends IDataRecord,
+  State extends IDataState = IDataState<RecordData>
 >(
   builder: ActionReducerMapBuilder<State>,
   updateAsyncThunk: AsyncThunk<RecordData[], void, {}>
@@ -43,9 +43,9 @@ function addUpdateCaseToBuilder<
 }
 
 function addRegistrationCaseToBuilder<
-  RecordData extends object,
-  RegisterData extends object,
-  State extends IDataBaseState = IDataBaseState<RecordData>
+  RecordData extends IDataRecord,
+  RegisterData extends PickRequestParams<RecordData>,
+  State extends IDataState = IDataState<RecordData>
 >(
   builder: ActionReducerMapBuilder<State>,
   registerAsyncThunk: AsyncThunk<RecordData, RegisterData, {}>
@@ -59,8 +59,8 @@ function addRegistrationCaseToBuilder<
 }
 
 export const createDataBaseSlice = <
-  RecordData extends object,
-  RegisterData extends object
+  RecordData extends IDataRecord,
+  RegisterData extends PickRequestParams<RecordData>
 >(
   name: string,
   updateAsyncThunk: AsyncThunk<RecordData[], void, {}>,

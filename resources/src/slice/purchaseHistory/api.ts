@@ -1,20 +1,22 @@
 import { PickRequestParams } from '@/type/api'
-import { PurchaseHistoryData } from './type'
+import { PurchaseHistoryRecord } from './type'
 
 export async function postPurchaseHistory(
-  request: PickRequestParams<PurchaseHistoryData>
-): Promise<PurchaseHistoryData> {
+  request: PickRequestParams<PurchaseHistoryRecord>
+): Promise<PurchaseHistoryRecord> {
   return {
     id: 3,
     ...request,
   }
 }
 
-export async function fetchPurchaseHistories(): Promise<PurchaseHistoryData[]> {
+export async function fetchPurchaseHistories(): Promise<
+  PurchaseHistoryRecord[]
+> {
   return [
     {
       id: 1,
-      purchaseDate: new Date(),
+      purchaseDate: '2022-01-01',
       usecaseId: 1,
       storeName: '店A',
       itemName: '品A',
@@ -23,7 +25,7 @@ export async function fetchPurchaseHistories(): Promise<PurchaseHistoryData[]> {
     },
     {
       id: 2,
-      purchaseDate: new Date(),
+      purchaseDate: '2022-01-02',
       usecaseId: 2,
       storeName: '店B',
       itemName: '品B',

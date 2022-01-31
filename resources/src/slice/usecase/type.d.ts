@@ -1,5 +1,6 @@
+import { IDataRecord } from '@/type/api'
+
 /** 用途情報 */
-export interface UsecaseData {
-  id: number
+export interface UsecaseRecord extends IDataRecord {
   usecase: string
 }

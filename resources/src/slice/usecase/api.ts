@@ -1,16 +1,16 @@
 import { PickRequestParams } from '@/type/api'
-import { UsecaseData } from './type'
+import { UsecaseRecord } from './type'
 
 export const postUsecase = async (
-  request: PickRequestParams<UsecaseData>
-): Promise<UsecaseData> => {
+  request: PickRequestParams<UsecaseRecord>
+): Promise<UsecaseRecord> => {
   return {
     id: 2,
     ...request,
   }
 }
 
-export const fetchUsecases = (): UsecaseData[] => {
+export const fetchUsecases = (): UsecaseRecord[] => {
   return [
     {
       id: 1,

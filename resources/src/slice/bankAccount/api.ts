@@ -1,16 +1,16 @@
 import { PickRequestParams } from '@/type/api'
-import { BankAccountData } from './type'
+import { BankAccountRecord } from './type'
 
 export const postBankAccount = async (
-  request: PickRequestParams<BankAccountData>
-): Promise<BankAccountData> => {
+  request: PickRequestParams<BankAccountRecord>
+): Promise<BankAccountRecord> => {
   return {
     id: 2,
     ...request,
   }
 }
 
-export const fetchBankAccounts = async (): Promise<BankAccountData[]> => {
+export const fetchBankAccounts = async (): Promise<BankAccountRecord[]> => {
   return [
     {
       id: 1,

@@ -1,16 +1,16 @@
 import { PickRequestParams } from '@/type/api'
-import { PersonData } from './type'
+import { PersonRecord } from './type'
 
 export const postPerson = async (
-  request: PickRequestParams<PersonData>
-): Promise<PersonData> => {
+  request: PickRequestParams<PersonRecord>
+): Promise<PersonRecord> => {
   return {
     id: 2,
     ...request,
   }
 }
 
-export const fetchPersons = (): PersonData[] => {
+export const fetchPersons = (): PersonRecord[] => {
   return [
     {
       id: 1,

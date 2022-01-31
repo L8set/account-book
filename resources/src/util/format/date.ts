@@ -1,27 +1,27 @@
-export const splitDateTime = (date: Date) => {
+export function splitDateTime(date: Date) {
   const yyyy = () => date.getFullYear().toString()
   const M = () => (date.getMonth() + 1).toString()
   const d = () => date.getDate.toString()
   return {
-    get yyyy() {
+    get yyyy(): string {
       return yyyy()
     },
-    get M() {
+    get M(): string {
       return M()
     },
-    get MM() {
+    get MM(): string {
       return M().padStart(2, '0')
     },
-    get d() {
+    get d(): string {
       return d()
     },
-    get dd() {
+    get dd(): string {
       return d().padStart(2, '0')
     },
   }
 }
 
-export const formatDateToYyyyMMdd = (date: Date) => {
+export function formatDateToYyyyMMdd(date: Date): string {
   const d = splitDateTime(date)
   return `${d.yyyy}/${d.MM}/${d.dd}`
 }

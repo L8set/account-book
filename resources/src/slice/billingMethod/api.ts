@@ -1,16 +1,16 @@
 import { PickRequestParams } from '@/type/api'
-import { BillingMethodData } from './type'
+import { BillingMethodRecord } from './type'
 
 export const postBillingMethod = async (
-  request: PickRequestParams<BillingMethodData>
-): Promise<BillingMethodData> => {
+  request: PickRequestParams<BillingMethodRecord>
+): Promise<BillingMethodRecord> => {
   return {
     id: 2,
     ...request,
   }
 }
 
-export const fetchBillingMethods = (): BillingMethodData[] => {
+export const fetchBillingMethods = (): BillingMethodRecord[] => {
   return [
     {
       id: 1,

@@ -1,7 +1,8 @@
+import { IDataRecord } from '@/type/api'
+
 /** 購入履歴情報 */
-export interface PurchaseHistoryData {
-  id: number
-  purchaseDate: Date
+export interface PurchaseHistoryRecord extends IDataRecord {
+  purchaseDate: string
   usecaseId: number
   storeName: string
   itemName: string

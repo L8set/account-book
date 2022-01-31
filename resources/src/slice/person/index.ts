@@ -1,4 +1,4 @@
-import { createDataBaseSlice } from '@/util/state/asyncData'
+import { createDataBaseSlice } from '@/slice'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { fetchPersons, postPerson } from './api'
 

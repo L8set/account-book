@@ -1,5 +1,6 @@
+import { IDataRecord } from '@/type/api'
+
 /** 口座情報 */
-export interface BankAccountData {
-  id: number
+export interface BankAccountRecord extends IDataRecord {
   account: string
 }

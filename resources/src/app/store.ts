@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
-import { purchaseSlice } from '@/slice/purchaseHistory'
+import { purchaseHistorySlice } from '@/slice/purchaseHistory'
 import { bankAccountSlice } from '@/slice/bankAccount'
 import { billingMethodSlice } from '@/slice/billingMethod'
 import { personSlice } from '@/slice/person'
@@ -10,7 +10,7 @@ export const store = configureStore({
     bankAccount: bankAccountSlice.reducer,
     billingMethod: billingMethodSlice.reducer,
     person: personSlice.reducer,
-    purchase: purchaseSlice.reducer,
+    purchaseHistory: purchaseHistorySlice.reducer,
     usecase: usecaseSlice.reducer,
   },
 })
