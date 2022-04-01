@@ -60,3 +60,14 @@ source .venv/bin/activate
 ```bash
 deactivate
 ```
+
+### 仮想環境に入れたパッケージ情報を出力
+
+```bash
+pip freeze > requirements.txt
+```
+
+### requirements.txtから必要パッケージをインストール
+
+```bash
+pip install -r requirements.txt
