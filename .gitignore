@@ -26,3 +26,7 @@ hs_err_pid*
 test
 /app/.env
 .vscode
+
+# django #
+*.pyc
+__pycache__/
