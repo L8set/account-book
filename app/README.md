@@ -91,6 +91,10 @@ pip install -r requirements.txt
 
 # Djangoアプリケーション
 
+```bash
+python manage.py startapp [アプリケーション名]
+```
+
 ## Djangoプロジェクトを作成
 
 ```bash
