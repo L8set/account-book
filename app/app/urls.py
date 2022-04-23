@@ -16,15 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
-from accountbook import views
+from accountbook.views import usecase, person, pastime, paymentMethod,bankAccount, billingMethod, purchaseHistory
 
-router = routers.DefaultRouter()
-router.register(r'usecases', views.UsecaseViewSet)
-router.register(r'persons', views.PersonViewSet)
-router.register(r'pastimes', views.PastimeViewSet)
-router.register(r'paymentMethods', views.PaymentMethodViewSet)
-router.register(r'bankAccounts', views.BankAccountViewSet)
-router.register(r'billingMethods', views.BillingMethodViewSet)
-router.register(r'purchaseHistories', views.PurchaseHistoryViewSet)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path('api/usecases', usecase.UsecaseListCreateViewSet.as_view()),
+    path('api/persons', person.PersonListViewSet.as_view()),
+    path('api/pastimes', pastime.PastimeListCreateViewSet.as_view()),
+    path('api/payment-methods', paymentMethod.PaymentMethodListCreateViewSet.as_view()),
+    path('api/bank-accounts', bankAccount.BankAccountListCreateViewSet.as_view()),
+    path('api/billing-methods', billingMethod.BillingMethodListCreateViewSet.as_view()),
+    path('api/purchase-histories', purchaseHistory.PurchaseHistoryListCreateViewSet.as_view()),
+    path('api/purchase-histories/<int:pk>', purchaseHistory.PurchaseHistoryRetrieveUpdateDestoryViewSet.as_view())
+]
