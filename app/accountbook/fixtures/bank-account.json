@@ -1,0 +1,35 @@
+[
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 1,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "竜成個人口座"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 2,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "夏美個人口座"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 3,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "家計口座"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 4,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "貯蓄口座"
+    }
+  }
+]
+

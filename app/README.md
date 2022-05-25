@@ -103,6 +103,14 @@ python manage.py startapp [アプリケーション名]
 django-admin startproject [プロジェクトフォルダ名]
 ```
 
+## Djangoアプリケーションの起動
+
+```bash
+python manage.py runserver (IPaddress:PortNum)
+```
+
+## Djangoアプリケーション
+
 # Django テーブルの作成
 
 ## migrationファイルの作成
@@ -121,4 +129,24 @@ python manage.py sqlmigrate [アプリケーションフォルダ] [マイグレ
 
 ```bash
 python manage.py migrate
+```
+
+## 初期データの読み込み
+
+```bash
+python manage.py loaddata [fixturesのファイル名]
+```
+
+# mariadb
+
+## 起動コマンド
+
+```bash
+mysql -u natsumi -p [データベース名]
+```
+
+## データベースの指定
+
+```bash
+use [データベース名]
 ```
