@@ -30,6 +30,118 @@
       "create_date": "2022-05-25",
       "name": "貯蓄口座"
     }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 5,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "個人事業"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 6,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "資産運用(SBI)"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 7,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "資産運用"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 8,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "三井住友カード"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 9,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Amazonクラシックカード"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 10,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "楽天カード"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 11,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Oricoカード"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 12,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "大阪府育英会"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 13,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "三井住友銀行"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 14,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ファミマTカード"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 15,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ULURU"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 16,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Paypay"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 17,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "現金"
+    }
+  },
+  {
+    "model": "accountbook.BankAccount",
+    "pk": 18,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "その他"
+    }
   }
 ]
 

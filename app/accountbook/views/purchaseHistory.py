@@ -8,7 +8,7 @@ class PurchaseHistoryFilter(filters.FilterSet):
     model = PurchaseHistory
     fields = ('id', 'purchase_date', 'usecase', 'store_name',
               'item_name', 'billing_method', 'price', 'person',
-              'payment_month', 'note', 'pastime')
+              'payment_month', 'note', 'pastime', "points")
 
 class PurchaseHistoryListCreateViewSet(generics.ListCreateAPIView):
   queryset = PurchaseHistory.objects.all()

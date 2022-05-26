@@ -1,0 +1,101 @@
+[
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 1,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "三井住友カード",
+      "payment_method": 3,
+      "bank_account_from": 3,
+      "bank_account_to": 8
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 2,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Amazonクラシックカード",
+      "payment_method": 3,
+      "bank_account_from": 3,
+      "bank_account_to": 9
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 3,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "楽天カード",
+      "payment_method": 3,
+      "bank_account_from": 3,
+      "bank_account_to": 10
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 4,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Oricoカード",
+      "payment_method": 3,
+      "bank_account_from": 3,
+      "bank_account_to": 11
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 5,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "竜成立替",
+      "payment_method": 1,
+      "bank_account_from": 3,
+      "bank_account_to": 1
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 6,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "夏美立替",
+      "payment_method": 1,
+      "bank_account_from": 3,
+      "bank_account_to": 2
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 7,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ファミマTカード",
+      "payment_method": 3,
+      "bank_account_from": 3,
+      "bank_account_to": 14
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 8,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "paypay残高",
+      "payment_method": 4,
+      "bank_account_from": 16,
+      "bank_account_to": 18
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 9,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "家計用口座",
+      "payment_method": 2,
+      "bank_account_from": 3,
+      "bank_account_to": 18
+    }
+  }
+]

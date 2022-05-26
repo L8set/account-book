@@ -1,0 +1,240 @@
+[
+  {
+    "pk": 1,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "家賃"
+    }
+  },
+  {
+    "pk": 2,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "光熱費"
+    }
+  },
+  {
+    "pk": 3,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "水道代"
+    }
+  },
+  {
+    "pk": 4,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "通信量（スマホ）"
+    }
+  },
+  {
+    "pk": 5,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "通信量（PC）"
+    }
+  },
+  {
+    "pk": 6,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "Microsoft Office"
+    }
+  },
+  {
+    "pk": 7,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "食費"
+    }
+  },
+  {
+    "pk": 8,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "雑費"
+    }
+  },
+  {
+    "pk": 9,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "化粧品"
+    }
+  },
+  {
+    "pk": 10,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ピル"
+    }
+  },
+  {
+    "pk": 11,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "新婚旅行"
+    }
+  },
+  {
+    "pk": 12,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "結婚写真"
+    }
+  },
+  {
+    "pk": 13,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "結婚パーティ"
+    }
+  },
+  {
+    "pk": 14,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "帰省"
+    }
+  },
+  {
+    "pk": 15,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "結婚記念日"
+    }
+  },
+  {
+    "pk": 16,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "結婚指輪"
+    }
+  },
+  {
+    "pk": 17,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ヘアカット"
+    }
+  },
+  {
+    "pk": 18,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "衣類"
+    }
+  },
+  {
+    "pk": 19,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "医療費"
+    }
+  },
+  {
+    "pk": 20,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ブラ"
+    }
+  },
+  {
+    "pk": 21,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "子供貯金"
+    }
+  },
+  {
+    "pk": 22,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "娯楽"
+    }
+  },
+  {
+    "pk": 23,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "奨学金"
+    }
+  },
+  {
+    "pk": 24,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "家具家電"
+    }
+  },
+  {
+    "pk": 25,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "冠婚葬祭"
+    }
+  },
+  {
+    "pk": 26,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "家賃更新手数料"
+    }
+  },
+  {
+    "pk": 27,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "運用資金"
+    }
+  },
+  {
+    "pk": 28,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "個人事業"
+    }
+  },
+  {
+    "pk": 29,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "個人購入"
+    }
+  },
+  {
+    "pk": 30,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "AmazonPrime"
+    }
+  },
+  {
+    "pk": 31,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "kindleunlimited"
+    }
+  },
+  {
+    "pk": 32,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ふるさと納税"
+    }
+  },
+  {
+    "pk": 33,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "不妊治療"
+    }
+  },
+  {
+    "pk": 34,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "ポケット保険"
+    }
+  }
+]

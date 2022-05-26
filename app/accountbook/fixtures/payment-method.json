@@ -1,0 +1,32 @@
+[
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 1,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "立替"
+    }
+  },
+  {
+    "model": "accountbook.BillingMethod",
+    "pk": 2,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "振込"
+    }
+  },{
+    "model": "accountbook.BillingMethod",
+    "pk": 3,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "クレジット"
+    }
+  },{
+    "model": "accountbook.BillingMethod",
+    "pk": 4,
+    "fields": {
+      "create_date": "2022-05-25",
+      "name": "その他"
+    }
+  }
+]

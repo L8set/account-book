@@ -27,7 +27,7 @@ class Pastime(TimeStampedModel):
     start_date = models.DateField()
     end_date = models.DateField()
     def __str__(self):
-        return self.name
+        return self.name()
 
 # 支払い方法テーブル
 class PaymentMethod(TimeStampedModel):
@@ -62,6 +62,7 @@ class PurchaseHistory(TimeStampedModel):
     payment_month = models.DateField(null=True)
     note = models.CharField(max_length=30, null=True)
     pastime = models.ForeignKey(Pastime, null=True, on_delete=models.PROTECT)
+    points = models.IntegerField(null=True)
     def __str__(self):
         return '%$ %$ %$' % (self.purchase_date, self.usecase, self.store_name)
 
