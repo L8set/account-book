@@ -1,7 +1,7 @@
 from django_filters import rest_framework as filters
 from rest_framework import generics
 from ..models import BillingMethod
-from ..serializers import BillingMethodSerializer
+from ..serializers.billingMethod import BillingMethodSerializer
 
 class BillingMethodFilter(filters.FilterSet):
   class Meta:

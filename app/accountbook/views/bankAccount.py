@@ -1,7 +1,7 @@
 from django_filters import rest_framework as filters
 from rest_framework import generics
 from ..models import BankAccount
-from ..serializers import BankAccountSerializer
+from ..serializers.bankAccount import BankAccountSerializer
 
 class BankAccountFilter(filters.FilterSet):
   class Meta:

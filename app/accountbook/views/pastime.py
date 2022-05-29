@@ -2,7 +2,7 @@ from operator import ge
 from django_filters import rest_framework as filters
 from rest_framework import generics
 from ..models import Pastime
-from ..serializers import PastimeSerializer
+from ..serializers.pastime import PastimeSerializer
 
 class PastimeFilter(filters.FilterSet):
   class Meta:
