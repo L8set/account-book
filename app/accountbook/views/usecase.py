@@ -1,14 +1,8 @@
 from django_filters import rest_framework as filters
 from rest_framework import generics
 from ..models import Usecase
-from ..serializers.usecase import UsecaseSerializer
+from ..serializers.usecase import UsecaseListSerializer
 
-class UsecaseFilter(filters.FilterSet):
-  class Meta:
-    model = Usecase
-    fields = ('id', 'name')
-
-class UsecaseListCreateViewSet(generics.ListCreateAPIView):
+class UsecaseListViewSet(generics.ListAPIView):
   queryset = Usecase.objects.all()
-  serializer_class = UsecaseSerializer
-  filterset_class = UsecaseFilter
+  serializer_class = UsecaseListSerializer

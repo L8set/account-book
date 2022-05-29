@@ -19,12 +19,12 @@ from rest_framework import routers
 from accountbook.views import usecase, person, pastime, paymentMethod,bankAccount, billingMethod, purchaseHistory
 
 urlpatterns = [
-    path('api/usecases', usecase.UsecaseListCreateViewSet.as_view()),
+    path('api/usecases', usecase.UsecaseListViewSet.as_view()),
     path('api/persons', person.PersonListViewSet.as_view()),
     path('api/pastimes', pastime.PastimeListCreateViewSet.as_view()),
     path('api/payment-methods', paymentMethod.PaymentMethodListCreateViewSet.as_view()),
     path('api/bank-accounts', bankAccount.BankAccountListCreateViewSet.as_view()),
-    path('api/billing-methods', billingMethod.BillingMethodListCreateViewSet.as_view()),
-    path('api/purchase-histories', purchaseHistory.PurchaseHistoryListCreateViewSet.as_view()),
+    path('api/billing-methods', billingMethod.BillingMethodListViewSet.as_view()),
+    path('api/purchase-histories', purchaseHistory.PurchaseHistoryListViewSet.as_view()),
     path('api/purchase-histories/<int:pk>', purchaseHistory.PurchaseHistoryRetrieveUpdateDestoryViewSet.as_view())
 ]
